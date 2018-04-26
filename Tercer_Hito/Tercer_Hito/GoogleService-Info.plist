@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>102092459850-2dadetm76g3qdcjqs3t0jtus6b99mgqb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.102092459850-2dadetm76g3qdcjqs3t0jtus6b99mgqb</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAZgOUqMms6AelEtLF2fHEp4Z5W0YFmP74</string>
+	<key>GCM_SENDER_ID</key>
+	<string>102092459850</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>MiguelyGuille.SegundoHito</string>
+	<key>PROJECT_ID</key>
+	<string>segundo-hito-8bb55</string>
+	<key>STORAGE_BUCKET</key>
+	<string>segundo-hito-8bb55.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:102092459850:ios:c95260b2573131b0</string>
+	<key>DATABASE_URL</key>
+	<string>https://segundo-hito-8bb55.firebaseio.com</string>
+</dict>
+</plist>

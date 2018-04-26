@@ -1,0 +1,888 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		073C9ED82091CF1600604ACF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C9ED72091CF1600604ACF /* ViewController.swift */; };
+		073C9EEB2091CF1800604ACF /* Tercer_HitoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C9EEA2091CF1800604ACF /* Tercer_HitoTests.swift */; };
+		073C9EF62091CF1800604ACF /* Tercer_HitoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C9EF52091CF1800604ACF /* Tercer_HitoUITests.swift */; };
+		073C9F2A2091CF4C00604ACF /* TrabajoFinal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 073C9F142091CF4B00604ACF /* TrabajoFinal.xcdatamodeld */; };
+		07E955BA2091DFE2009B48E6 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E955A82091DFDF009B48E6 /* City.swift */; };
+		07E955BB2091DFE2009B48E6 /* VCMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E955A92091DFDF009B48E6 /* VCMap.swift */; };
+		07E955BC2091DFE2009B48E6 /* VCColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E955AA2091DFDF009B48E6 /* VCColeccion.swift */; };
+		07E955BD2091DFE2009B48E6 /* TVCMiCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E955AB2091DFDF009B48E6 /* TVCMiCelda.swift */; };
+		07E955BE2091DFE2009B48E6 /* CVCMicelda2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E955AC2091DFE0009B48E6 /* CVCMicelda2.swift */; };
+		07E955BF2091DFE2009B48E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E955AD2091DFE0009B48E6 /* Assets.xcassets */; };
+		07E955C02091DFE2009B48E6 /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E955AE2091DFE0009B48E6 /* Perfil.swift */; };
+		07E955C12091DFE2009B48E6 /* canario.png in Resources */ = {isa = PBXBuildFile; fileRef = 07E955AF2091DFE0009B48E6 /* canario.png */; };
+		07E955C22091DFE2009B48E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E955B02091DFE0009B48E6 /* AppDelegate.swift */; };
+		07E955C32091DFE2009B48E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07E955B12091DFE0009B48E6 /* GoogleService-Info.plist */; };
+		07E955C42091DFE2009B48E6 /* DataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E955B22091DFE0009B48E6 /* DataHolder.swift */; };
+		07E955C52091DFE2009B48E6 /* gato.png in Resources */ = {isa = PBXBuildFile; fileRef = 07E955B32091DFE1009B48E6 /* gato.png */; };
+		07E955C72091DFE2009B48E6 /* caballo.png in Resources */ = {isa = PBXBuildFile; fileRef = 07E955B52091DFE1009B48E6 /* caballo.png */; };
+		07E955C82091DFE2009B48E6 /* perro.png in Resources */ = {isa = PBXBuildFile; fileRef = 07E955B62091DFE1009B48E6 /* perro.png */; };
+		07E955C92091DFE2009B48E6 /* huron.png in Resources */ = {isa = PBXBuildFile; fileRef = 07E955B72091DFE1009B48E6 /* huron.png */; };
+		07E955CA2091DFE2009B48E6 /* VCRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E955B82091DFE1009B48E6 /* VCRegister.swift */; };
+		07E955CB2091DFE2009B48E6 /* VCPrincipal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E955B92091DFE2009B48E6 /* VCPrincipal.swift */; };
+		07E955CD2091E025009B48E6 /* eliminar-pis-de-gato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07E955CC2091E025009B48E6 /* eliminar-pis-de-gato.jpg */; };
+		07E955D22091E033009B48E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E955CE2091E033009B48E6 /* LaunchScreen.storyboard */; };
+		07E955D32091E033009B48E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E955D02091E033009B48E6 /* Main.storyboard */; };
+		27B2A4709A7CE0F1233D6497 /* Pods_Tercer_HitoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62CE64254020E0CB181FC66 /* Pods_Tercer_HitoUITests.framework */; };
+		2EE135E6FC3EDABC211178D9 /* Pods_Tercer_HitoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F38FA851304F9A2B5EB3748 /* Pods_Tercer_HitoTests.framework */; };
+		F664CB5E65A1BBD68962B8EF /* Pods_Tercer_Hito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A608C64D02064C51518EAD9 /* Pods_Tercer_Hito.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		073C9EE72091CF1800604ACF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 073C9ECA2091CF1600604ACF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 073C9ED12091CF1600604ACF;
+			remoteInfo = Tercer_Hito;
+		};
+		073C9EF22091CF1800604ACF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 073C9ECA2091CF1600604ACF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 073C9ED12091CF1600604ACF;
+			remoteInfo = Tercer_Hito;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		073C9ED22091CF1600604ACF /* Tercer_Hito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tercer_Hito.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		073C9ED72091CF1600604ACF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		073C9EE12091CF1800604ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		073C9EE62091CF1800604ACF /* Tercer_HitoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tercer_HitoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		073C9EEA2091CF1800604ACF /* Tercer_HitoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tercer_HitoTests.swift; sourceTree = "<group>"; };
+		073C9EEC2091CF1800604ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		073C9EF12091CF1800604ACF /* Tercer_HitoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tercer_HitoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		073C9EF52091CF1800604ACF /* Tercer_HitoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tercer_HitoUITests.swift; sourceTree = "<group>"; };
+		073C9EF72091CF1800604ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		073C9F152091CF4B00604ACF /* TrabajoFinal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrabajoFinal.xcdatamodel; sourceTree = "<group>"; };
+		07E955A82091DFDF009B48E6 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		07E955A92091DFDF009B48E6 /* VCMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMap.swift; sourceTree = "<group>"; };
+		07E955AA2091DFDF009B48E6 /* VCColeccion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCColeccion.swift; sourceTree = "<group>"; };
+		07E955AB2091DFDF009B48E6 /* TVCMiCelda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVCMiCelda.swift; sourceTree = "<group>"; };
+		07E955AC2091DFE0009B48E6 /* CVCMicelda2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCMicelda2.swift; sourceTree = "<group>"; };
+		07E955AD2091DFE0009B48E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07E955AE2091DFE0009B48E6 /* Perfil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
+		07E955AF2091DFE0009B48E6 /* canario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canario.png; sourceTree = "<group>"; };
+		07E955B02091DFE0009B48E6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07E955B12091DFE0009B48E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		07E955B22091DFE0009B48E6 /* DataHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHolder.swift; sourceTree = "<group>"; };
+		07E955B32091DFE1009B48E6 /* gato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gato.png; sourceTree = "<group>"; };
+		07E955B52091DFE1009B48E6 /* caballo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = caballo.png; sourceTree = "<group>"; };
+		07E955B62091DFE1009B48E6 /* perro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perro.png; sourceTree = "<group>"; };
+		07E955B72091DFE1009B48E6 /* huron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huron.png; sourceTree = "<group>"; };
+		07E955B82091DFE1009B48E6 /* VCRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCRegister.swift; sourceTree = "<group>"; };
+		07E955B92091DFE2009B48E6 /* VCPrincipal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCPrincipal.swift; sourceTree = "<group>"; };
+		07E955CC2091E025009B48E6 /* eliminar-pis-de-gato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "eliminar-pis-de-gato.jpg"; sourceTree = "<group>"; };
+		07E955CF2091E033009B48E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07E955D12091E033009B48E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		118A1C1EEB296C26683387B8 /* Pods-Tercer_HitoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tercer_HitoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tercer_HitoTests/Pods-Tercer_HitoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F38FA851304F9A2B5EB3748 /* Pods_Tercer_HitoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tercer_HitoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A0F2D784570F269D9FDAB37 /* Pods-Tercer_HitoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tercer_HitoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tercer_HitoUITests/Pods-Tercer_HitoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5A608C64D02064C51518EAD9 /* Pods_Tercer_Hito.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tercer_Hito.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C01CC180B974B2005EE9CF /* Pods-Tercer_HitoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tercer_HitoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tercer_HitoTests/Pods-Tercer_HitoTests.release.xcconfig"; sourceTree = "<group>"; };
+		92B50497EC7FFCA1070B80FA /* Pods-Tercer_Hito.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tercer_Hito.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tercer_Hito/Pods-Tercer_Hito.release.xcconfig"; sourceTree = "<group>"; };
+		ADEA6765DEA14E8B3B1827C2 /* Pods-Tercer_HitoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tercer_HitoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tercer_HitoUITests/Pods-Tercer_HitoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C62CE64254020E0CB181FC66 /* Pods_Tercer_HitoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tercer_HitoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF85CACDE9C02212B06FB5CF /* Pods-Tercer_Hito.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tercer_Hito.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tercer_Hito/Pods-Tercer_Hito.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		073C9ECF2091CF1600604ACF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F664CB5E65A1BBD68962B8EF /* Pods_Tercer_Hito.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		073C9EE32091CF1800604ACF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE135E6FC3EDABC211178D9 /* Pods_Tercer_HitoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		073C9EEE2091CF1800604ACF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B2A4709A7CE0F1233D6497 /* Pods_Tercer_HitoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		073C9EC92091CF1600604ACF = {
+			isa = PBXGroup;
+			children = (
+				07E955CC2091E025009B48E6 /* eliminar-pis-de-gato.jpg */,
+				073C9ED42091CF1600604ACF /* Tercer_Hito */,
+				073C9EE92091CF1800604ACF /* Tercer_HitoTests */,
+				073C9EF42091CF1800604ACF /* Tercer_HitoUITests */,
+				073C9ED32091CF1600604ACF /* Products */,
+				8C9DA4F5E1D47693479922D6 /* Pods */,
+				6C3A792B845F72F76877FA75 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		073C9ED32091CF1600604ACF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				073C9ED22091CF1600604ACF /* Tercer_Hito.app */,
+				073C9EE62091CF1800604ACF /* Tercer_HitoTests.xctest */,
+				073C9EF12091CF1800604ACF /* Tercer_HitoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		073C9ED42091CF1600604ACF /* Tercer_Hito */ = {
+			isa = PBXGroup;
+			children = (
+				07E955B12091DFE0009B48E6 /* GoogleService-Info.plist */,
+				07E955AD2091DFE0009B48E6 /* Assets.xcassets */,
+				07E955B62091DFE1009B48E6 /* perro.png */,
+				07E955B32091DFE1009B48E6 /* gato.png */,
+				07E955AF2091DFE0009B48E6 /* canario.png */,
+				07E955B52091DFE1009B48E6 /* caballo.png */,
+				07E955B72091DFE1009B48E6 /* huron.png */,
+				07E955B02091DFE0009B48E6 /* AppDelegate.swift */,
+				073C9ED72091CF1600604ACF /* ViewController.swift */,
+				073C9EE12091CF1800604ACF /* Info.plist */,
+				07E955D02091E033009B48E6 /* Main.storyboard */,
+				07E955CE2091E033009B48E6 /* LaunchScreen.storyboard */,
+				07E955A82091DFDF009B48E6 /* City.swift */,
+				07E955AC2091DFE0009B48E6 /* CVCMicelda2.swift */,
+				07E955B22091DFE0009B48E6 /* DataHolder.swift */,
+				07E955AE2091DFE0009B48E6 /* Perfil.swift */,
+				07E955AB2091DFDF009B48E6 /* TVCMiCelda.swift */,
+				07E955AA2091DFDF009B48E6 /* VCColeccion.swift */,
+				07E955A92091DFDF009B48E6 /* VCMap.swift */,
+				07E955B92091DFE2009B48E6 /* VCPrincipal.swift */,
+				07E955B82091DFE1009B48E6 /* VCRegister.swift */,
+				073C9F142091CF4B00604ACF /* TrabajoFinal.xcdatamodeld */,
+			);
+			path = Tercer_Hito;
+			sourceTree = "<group>";
+		};
+		073C9EE92091CF1800604ACF /* Tercer_HitoTests */ = {
+			isa = PBXGroup;
+			children = (
+				073C9EEA2091CF1800604ACF /* Tercer_HitoTests.swift */,
+				073C9EEC2091CF1800604ACF /* Info.plist */,
+			);
+			path = Tercer_HitoTests;
+			sourceTree = "<group>";
+		};
+		073C9EF42091CF1800604ACF /* Tercer_HitoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				073C9EF52091CF1800604ACF /* Tercer_HitoUITests.swift */,
+				073C9EF72091CF1800604ACF /* Info.plist */,
+			);
+			path = Tercer_HitoUITests;
+			sourceTree = "<group>";
+		};
+		6C3A792B845F72F76877FA75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A608C64D02064C51518EAD9 /* Pods_Tercer_Hito.framework */,
+				2F38FA851304F9A2B5EB3748 /* Pods_Tercer_HitoTests.framework */,
+				C62CE64254020E0CB181FC66 /* Pods_Tercer_HitoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C9DA4F5E1D47693479922D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF85CACDE9C02212B06FB5CF /* Pods-Tercer_Hito.debug.xcconfig */,
+				92B50497EC7FFCA1070B80FA /* Pods-Tercer_Hito.release.xcconfig */,
+				118A1C1EEB296C26683387B8 /* Pods-Tercer_HitoTests.debug.xcconfig */,
+				66C01CC180B974B2005EE9CF /* Pods-Tercer_HitoTests.release.xcconfig */,
+				ADEA6765DEA14E8B3B1827C2 /* Pods-Tercer_HitoUITests.debug.xcconfig */,
+				4A0F2D784570F269D9FDAB37 /* Pods-Tercer_HitoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		073C9ED12091CF1600604ACF /* Tercer_Hito */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 073C9EFA2091CF1800604ACF /* Build configuration list for PBXNativeTarget "Tercer_Hito" */;
+			buildPhases = (
+				DB870C0E628C0E4303AB908D /* [CP] Check Pods Manifest.lock */,
+				073C9ECE2091CF1600604ACF /* Sources */,
+				073C9ECF2091CF1600604ACF /* Frameworks */,
+				073C9ED02091CF1600604ACF /* Resources */,
+				0E6CD2868C27DBD5F0508EFA /* [CP] Embed Pods Frameworks */,
+				D9B7CF8D1B0106A9E80ACD68 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tercer_Hito;
+			productName = Tercer_Hito;
+			productReference = 073C9ED22091CF1600604ACF /* Tercer_Hito.app */;
+			productType = "com.apple.product-type.application";
+		};
+		073C9EE52091CF1800604ACF /* Tercer_HitoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 073C9EFD2091CF1800604ACF /* Build configuration list for PBXNativeTarget "Tercer_HitoTests" */;
+			buildPhases = (
+				F96D9C5324103A469F1EBC69 /* [CP] Check Pods Manifest.lock */,
+				073C9EE22091CF1800604ACF /* Sources */,
+				073C9EE32091CF1800604ACF /* Frameworks */,
+				073C9EE42091CF1800604ACF /* Resources */,
+				5192B524302AF9C9281F5AC2 /* [CP] Embed Pods Frameworks */,
+				C5C34D3E2A9D731A12762B96 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				073C9EE82091CF1800604ACF /* PBXTargetDependency */,
+			);
+			name = Tercer_HitoTests;
+			productName = Tercer_HitoTests;
+			productReference = 073C9EE62091CF1800604ACF /* Tercer_HitoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		073C9EF02091CF1800604ACF /* Tercer_HitoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 073C9F002091CF1800604ACF /* Build configuration list for PBXNativeTarget "Tercer_HitoUITests" */;
+			buildPhases = (
+				78A8C50DBE5CEAF70478FFF3 /* [CP] Check Pods Manifest.lock */,
+				073C9EED2091CF1800604ACF /* Sources */,
+				073C9EEE2091CF1800604ACF /* Frameworks */,
+				073C9EEF2091CF1800604ACF /* Resources */,
+				D52AE555B43FD3FB27C58D96 /* [CP] Embed Pods Frameworks */,
+				38A0E7F9D525FC954D7C3A94 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				073C9EF32091CF1800604ACF /* PBXTargetDependency */,
+			);
+			name = Tercer_HitoUITests;
+			productName = Tercer_HitoUITests;
+			productReference = 073C9EF12091CF1800604ACF /* Tercer_HitoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		073C9ECA2091CF1600604ACF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "GUILLERMO CRESPO AGUAYO";
+				TargetAttributes = {
+					073C9ED12091CF1600604ACF = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					073C9EE52091CF1800604ACF = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 073C9ED12091CF1600604ACF;
+					};
+					073C9EF02091CF1800604ACF = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 073C9ED12091CF1600604ACF;
+					};
+				};
+			};
+			buildConfigurationList = 073C9ECD2091CF1600604ACF /* Build configuration list for PBXProject "Tercer_Hito" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 073C9EC92091CF1600604ACF;
+			productRefGroup = 073C9ED32091CF1600604ACF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				073C9ED12091CF1600604ACF /* Tercer_Hito */,
+				073C9EE52091CF1800604ACF /* Tercer_HitoTests */,
+				073C9EF02091CF1800604ACF /* Tercer_HitoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		073C9ED02091CF1600604ACF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E955C92091DFE2009B48E6 /* huron.png in Resources */,
+				07E955BF2091DFE2009B48E6 /* Assets.xcassets in Resources */,
+				07E955CD2091E025009B48E6 /* eliminar-pis-de-gato.jpg in Resources */,
+				07E955D22091E033009B48E6 /* LaunchScreen.storyboard in Resources */,
+				07E955C82091DFE2009B48E6 /* perro.png in Resources */,
+				07E955D32091E033009B48E6 /* Main.storyboard in Resources */,
+				07E955C12091DFE2009B48E6 /* canario.png in Resources */,
+				07E955C72091DFE2009B48E6 /* caballo.png in Resources */,
+				07E955C52091DFE2009B48E6 /* gato.png in Resources */,
+				07E955C32091DFE2009B48E6 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		073C9EE42091CF1800604ACF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		073C9EEF2091CF1800604ACF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E6CD2868C27DBD5F0508EFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tercer_Hito/Pods-Tercer_Hito-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tercer_Hito/Pods-Tercer_Hito-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38A0E7F9D525FC954D7C3A94 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tercer_HitoUITests/Pods-Tercer_HitoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5192B524302AF9C9281F5AC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tercer_HitoTests/Pods-Tercer_HitoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78A8C50DBE5CEAF70478FFF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tercer_HitoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5C34D3E2A9D731A12762B96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tercer_HitoTests/Pods-Tercer_HitoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D52AE555B43FD3FB27C58D96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tercer_HitoUITests/Pods-Tercer_HitoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9B7CF8D1B0106A9E80ACD68 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tercer_Hito/Pods-Tercer_Hito-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB870C0E628C0E4303AB908D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tercer_Hito-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F96D9C5324103A469F1EBC69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tercer_HitoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		073C9ECE2091CF1600604ACF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073C9ED82091CF1600604ACF /* ViewController.swift in Sources */,
+				07E955C42091DFE2009B48E6 /* DataHolder.swift in Sources */,
+				07E955C02091DFE2009B48E6 /* Perfil.swift in Sources */,
+				07E955BD2091DFE2009B48E6 /* TVCMiCelda.swift in Sources */,
+				07E955C22091DFE2009B48E6 /* AppDelegate.swift in Sources */,
+				07E955BB2091DFE2009B48E6 /* VCMap.swift in Sources */,
+				073C9F2A2091CF4C00604ACF /* TrabajoFinal.xcdatamodeld in Sources */,
+				07E955CB2091DFE2009B48E6 /* VCPrincipal.swift in Sources */,
+				07E955BA2091DFE2009B48E6 /* City.swift in Sources */,
+				07E955BC2091DFE2009B48E6 /* VCColeccion.swift in Sources */,
+				07E955CA2091DFE2009B48E6 /* VCRegister.swift in Sources */,
+				07E955BE2091DFE2009B48E6 /* CVCMicelda2.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		073C9EE22091CF1800604ACF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073C9EEB2091CF1800604ACF /* Tercer_HitoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		073C9EED2091CF1800604ACF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073C9EF62091CF1800604ACF /* Tercer_HitoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		073C9EE82091CF1800604ACF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 073C9ED12091CF1600604ACF /* Tercer_Hito */;
+			targetProxy = 073C9EE72091CF1800604ACF /* PBXContainerItemProxy */;
+		};
+		073C9EF32091CF1800604ACF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 073C9ED12091CF1600604ACF /* Tercer_Hito */;
+			targetProxy = 073C9EF22091CF1800604ACF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07E955CE2091E033009B48E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07E955CF2091E033009B48E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		07E955D02091E033009B48E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07E955D12091E033009B48E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		073C9EF82091CF1800604ACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		073C9EF92091CF1800604ACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		073C9EFB2091CF1800604ACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF85CACDE9C02212B06FB5CF /* Pods-Tercer_Hito.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tercer_Hito/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MiguelyGuille.SegundoHito;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		073C9EFC2091CF1800604ACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92B50497EC7FFCA1070B80FA /* Pods-Tercer_Hito.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tercer_Hito/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MiguelyGuille.SegundoHito;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		073C9EFE2091CF1800604ACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 118A1C1EEB296C26683387B8 /* Pods-Tercer_HitoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tercer_HitoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "u-tad.Tercer-HitoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tercer_Hito.app/Tercer_Hito";
+			};
+			name = Debug;
+		};
+		073C9EFF2091CF1800604ACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66C01CC180B974B2005EE9CF /* Pods-Tercer_HitoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tercer_HitoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "u-tad.Tercer-HitoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tercer_Hito.app/Tercer_Hito";
+			};
+			name = Release;
+		};
+		073C9F012091CF1800604ACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADEA6765DEA14E8B3B1827C2 /* Pods-Tercer_HitoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tercer_HitoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "u-tad.Tercer-HitoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tercer_Hito;
+			};
+			name = Debug;
+		};
+		073C9F022091CF1800604ACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A0F2D784570F269D9FDAB37 /* Pods-Tercer_HitoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tercer_HitoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "u-tad.Tercer-HitoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tercer_Hito;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		073C9ECD2091CF1600604ACF /* Build configuration list for PBXProject "Tercer_Hito" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				073C9EF82091CF1800604ACF /* Debug */,
+				073C9EF92091CF1800604ACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		073C9EFA2091CF1800604ACF /* Build configuration list for PBXNativeTarget "Tercer_Hito" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				073C9EFB2091CF1800604ACF /* Debug */,
+				073C9EFC2091CF1800604ACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		073C9EFD2091CF1800604ACF /* Build configuration list for PBXNativeTarget "Tercer_HitoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				073C9EFE2091CF1800604ACF /* Debug */,
+				073C9EFF2091CF1800604ACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		073C9F002091CF1800604ACF /* Build configuration list for PBXNativeTarget "Tercer_HitoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				073C9F012091CF1800604ACF /* Debug */,
+				073C9F022091CF1800604ACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		073C9F142091CF4B00604ACF /* TrabajoFinal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				073C9F152091CF4B00604ACF /* TrabajoFinal.xcdatamodel */,
+			);
+			currentVersion = 073C9F152091CF4B00604ACF /* TrabajoFinal.xcdatamodel */;
+			name = TrabajoFinal.xcdatamodeld;
+			path = ../../../SegundoHito_IOS_Guillermo_y_Miguel/TrabajoFinal/TrabajoFinal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 073C9ECA2091CF1600604ACF /* Project object */;
+}
