@@ -8,10 +8,10 @@
 
 import UIKit
 
-class VCPrincipal: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class VCPrincipal: UIViewController, UITableViewDelegate, UITableViewDataSource,DataHolderDelegate {
     
     @IBOutlet var tbMiTable:UITableView?
-    var arCiudades: [City] = NSArray() as! [City]
+
     
   /*  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
@@ -26,7 +26,7 @@ class VCPrincipal: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        /*
         DataHolder.sharedInstance.fireStoreDB?.collection("animales").addSnapshotListener  { (querySnapshot, err) in
                 if let err = err {
                     print("Error getting documents: \(err)")
@@ -44,8 +44,12 @@ class VCPrincipal: UIViewController, UITableViewDelegate, UITableViewDataSource 
                     self.refreshUI()
                     
                 }
-            
+
         }        // Do any additional setup after loading the view.
+        */
+        
+        DataHolder.sharedInstance.vcPrincipal = self
+        DataHolder.sharedInstance.descargarCiudades(delegate: self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,38 +57,25 @@ class VCPrincipal: UIViewController, UITableViewDelegate, UITableViewDataSource 
         // Dispose of any resources that can be recreated.
     }
     
+    func DHDdescargaCiudadesCompleta(blFin: Bool) {
+        if blFin{
+            refreshUI()
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.arCiudades.count
+        return DataHolder.sharedInstance.arCiudades.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:TVCMiCelda = tableView.dequeueReusableCell(withIdentifier: "micelda1") as! TVCMiCelda
         
-            cell.lblNombre?.text = self.arCiudades[indexPath.row].sNombre
-            cell.mostrarImagen(uri: self.arCiudades[indexPath.row].sImagen!)
+           // cell.lblNombre?.text = self.arCiudades[indexPath.row].sNombre
+            //cell.mostrarImagen(uri: self.arCiudades[indexPath.row].sImagen!)
         
-        /*
-        if(indexPath.row==0){
-             cell.imagen1?.image=UIImage(named: "gato.png")
-            cell.lblNombre?.text="Gato"
-        }
-        else if(indexPath.row==1){
-            cell.imagen1?.image=UIImage(named: "perro.png")
-            cell.lblNombre?.text="Perro"
-        }
-        else if(indexPath.row==2){
-            cell.imagen1?.image=UIImage(named: "caballo.png")
-            cell.lblNombre?.text="Caballo"
-        }
-        else if(indexPath.row==3){
-            cell.imagen1?.image=UIImage(named: "huron.png")
-            cell.lblNombre?.text="Hurón"
-        }
-        else if(indexPath.row==4){
-            cell.imagen1?.image=UIImage(named: "canario.png")
-            cell.lblNombre?.text="Canario"
-        }
- */
+        cell.lblNombre?.text=DataHolder.sharedInstance.arCiudades[indexPath.row].sNombre
+        cell.mostrarImagen(uri: DataHolder.sharedInstance.arCiudades[indexPath.row].sImagen!)
+      
         return cell
     }
     

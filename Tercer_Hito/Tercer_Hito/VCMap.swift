@@ -10,13 +10,15 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class VCMap: UIViewController, CLLocationManagerDelegate {
+class VCMap: UIViewController, CLLocationManagerDelegate, DataHolderDelegate {
 
     @IBOutlet var MiMapa:MKMapView?
     var locationManager:CLLocationManager?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        DataHolder.sharedInstance.descargarCiudades(delegate: self)
         self.agregarPin(titulo: "HOLA", latitude: 42, longitude: -3)
         locationManager = CLLocationManager()
         locationManager?.delegate = self
@@ -56,6 +58,18 @@ class VCMap: UIViewController, CLLocationManagerDelegate {
         
         MiMapa?.setRegion(miRegion, animated: true)
     }
+    
+    func DHDdescargaCiudadesCompleta(blFin: Bool) {
+        if blFin{
+            self.agregarPin()
+    }
+        
+    }
+    
+    func agregarPin(){
+        print("Agregando pines")
+    }
+    
     /*
     // MARK: - Navigation
 

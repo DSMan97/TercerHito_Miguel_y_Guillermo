@@ -10,44 +10,46 @@ import UIKit
 import Firebase
 import FirebaseStorage
 
+
 class DataHolder: NSObject {
     static let sharedInstance:DataHolder = DataHolder()
     var fireStoreDB:Firestore?
     var miPerfil: Perfil=Perfil()
+    
+    var arCiudades: [City] = NSArray() as! [City]
+    var vcPrincipal:VCPrincipal?
+    
     var firStorage:Storage?
     func initFireBase(){
         FirebaseApp.configure()
         fireStoreDB=Firestore.firestore()
         firStorage=Storage.storage()
-        /*
-        let ciudadesRef = fireStoreDB?.collection("animales")
-        
-        ciudadesRef?.document("MAD").setData([
-            "nombre": "Madrid",
-            "capital": "Madrid",
-            "país": "España",
-            "escapital": true
-            ])
-        ciudadesRef?.document("BAR").setData([
-            "nombre": "Catalunya",
-            "capital": "Barcelona",
-            "país": "España",
-            "escapital": false
-            ])
-        ciudadesRef?.document("SEV").setData([
-            "nombre": "Andalucia",
-            "capital": "Sevilla",
-            "país": "España",
-            "escapital": false
-            ])
-        ciudadesRef?.document("CACE").setData([
-            "nombre": "Extremadura",
-            "capital": "Cáceres",
-            "país": "España",
-            "escapital": false
-            ])
-        */
     }
-    
+        
+    func descargarCiudades(delegate:DataHolderDelegate){
+            DataHolder.sharedInstance.fireStoreDB?.collection("animales").addSnapshotListener  { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    self.arCiudades=[]
+                    for document in querySnapshot!.documents {
+                        
+                        let ciudad: City=City()
+                        ciudad.sID = document.documentID
+                        ciudad.setMap(valores: document.data())
+                        self.arCiudades.append(ciudad)
+                        print("\(document.documentID) => \(document.data())")
+                    }
+                    print("-------->",self.arCiudades.count )
+                    delegate.DHDdescargaCiudadesCompleta!(blFin:true)
+                    //self.tbMiTable?.reloadData()
+                }
+    }
+   
 }
 
+}
+
+@objc protocol DataHolderDelegate{
+    @objc optional func DHDdescargaCiudadesCompleta(blFin:Bool)
+}
