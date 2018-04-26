@@ -10,7 +10,6 @@
 		073C9ED82091CF1600604ACF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C9ED72091CF1600604ACF /* ViewController.swift */; };
 		073C9EEB2091CF1800604ACF /* Tercer_HitoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C9EEA2091CF1800604ACF /* Tercer_HitoTests.swift */; };
 		073C9EF62091CF1800604ACF /* Tercer_HitoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C9EF52091CF1800604ACF /* Tercer_HitoUITests.swift */; };
-		073C9F2A2091CF4C00604ACF /* TrabajoFinal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 073C9F142091CF4B00604ACF /* TrabajoFinal.xcdatamodeld */; };
 		07E955BA2091DFE2009B48E6 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E955A82091DFDF009B48E6 /* City.swift */; };
 		07E955BB2091DFE2009B48E6 /* VCMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E955A92091DFDF009B48E6 /* VCMap.swift */; };
 		07E955BC2091DFE2009B48E6 /* VCColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E955AA2091DFDF009B48E6 /* VCColeccion.swift */; };
@@ -63,7 +62,6 @@
 		073C9EF12091CF1800604ACF /* Tercer_HitoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tercer_HitoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		073C9EF52091CF1800604ACF /* Tercer_HitoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tercer_HitoUITests.swift; sourceTree = "<group>"; };
 		073C9EF72091CF1800604ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		073C9F152091CF4B00604ACF /* TrabajoFinal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrabajoFinal.xcdatamodel; sourceTree = "<group>"; };
 		07E955A82091DFDF009B48E6 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		07E955A92091DFDF009B48E6 /* VCMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMap.swift; sourceTree = "<group>"; };
 		07E955AA2091DFDF009B48E6 /* VCColeccion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCColeccion.swift; sourceTree = "<group>"; };
@@ -170,7 +168,6 @@
 				07E955A92091DFDF009B48E6 /* VCMap.swift */,
 				07E955B92091DFE2009B48E6 /* VCPrincipal.swift */,
 				07E955B82091DFE1009B48E6 /* VCRegister.swift */,
-				073C9F142091CF4B00604ACF /* TrabajoFinal.xcdatamodeld */,
 			);
 			path = Tercer_Hito;
 			sourceTree = "<group>";
@@ -537,7 +534,6 @@
 				07E955BD2091DFE2009B48E6 /* TVCMiCelda.swift in Sources */,
 				07E955C22091DFE2009B48E6 /* AppDelegate.swift in Sources */,
 				07E955BB2091DFE2009B48E6 /* VCMap.swift in Sources */,
-				073C9F2A2091CF4C00604ACF /* TrabajoFinal.xcdatamodeld in Sources */,
 				07E955CB2091DFE2009B48E6 /* VCPrincipal.swift in Sources */,
 				07E955BA2091DFE2009B48E6 /* City.swift in Sources */,
 				07E955BC2091DFE2009B48E6 /* VCColeccion.swift in Sources */,
@@ -869,20 +865,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		073C9F142091CF4B00604ACF /* TrabajoFinal.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				073C9F152091CF4B00604ACF /* TrabajoFinal.xcdatamodel */,
-			);
-			currentVersion = 073C9F152091CF4B00604ACF /* TrabajoFinal.xcdatamodel */;
-			name = TrabajoFinal.xcdatamodeld;
-			path = ../../../SegundoHito_IOS_Guillermo_y_Miguel/TrabajoFinal/TrabajoFinal.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 073C9ECA2091CF1600604ACF /* Project object */;
 }
