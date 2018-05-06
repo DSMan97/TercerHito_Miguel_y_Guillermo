@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VCColeccion: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class VCColeccion: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,DataHolderDelegate{
    
     var arCiudades: [City] = NSArray() as! [City]
     
@@ -52,7 +52,7 @@ class VCColeccion: UIViewController, UICollectionViewDelegate, UICollectionViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        DataHolder.sharedInstance.fireStoreDB?.collection("animales").addSnapshotListener  { (querySnapshot, err) in
+        /*DataHolder.sharedInstance.fireStoreDB?.collection("animales").addSnapshotListener  { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {
@@ -70,11 +70,19 @@ class VCColeccion: UIViewController, UICollectionViewDelegate, UICollectionViewD
             }
             
         }           // Do any additional setup after loading the view.
-    }
+        */
+        DataHolder.sharedInstance.vcColeccion = self
+        DataHolder.sharedInstance.descargarCiudades(delegate: self)    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func DHDdescargaCiudadesCompleta(blFin: Bool) {
+        if blFin{
+            refreshUI()
+        }
     }
     
     func refreshUI() {
