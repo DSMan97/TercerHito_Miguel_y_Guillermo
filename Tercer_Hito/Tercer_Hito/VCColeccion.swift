@@ -72,7 +72,9 @@ class VCColeccion: UIViewController, UICollectionViewDelegate, UICollectionViewD
         }           // Do any additional setup after loading the view.
         */
         DataHolder.sharedInstance.vcColeccion = self
-        DataHolder.sharedInstance.descargarCiudades(delegate: self)    }
+        DataHolder.sharedInstance.descargarCiudades(delegate: self)
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
