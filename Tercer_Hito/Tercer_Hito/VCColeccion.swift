@@ -10,10 +10,10 @@ import UIKit
 
 class VCColeccion: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,DataHolderDelegate{
    
-    var arCiudades: [City] = NSArray() as! [City]
+  
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-         return self.arCiudades.count 
+         return DataHolder.sharedInstance.arCiudades.count
         
         
     }
@@ -22,30 +22,10 @@ class VCColeccion: UIViewController, UICollectionViewDelegate, UICollectionViewD
         
         
             
-            cell.lblNombre?.text = self.arCiudades[indexPath.row].sNombre
-            cell.mostrarImagen(uri: self.arCiudades[indexPath.row].sImagen!)
+            cell.lblNombre?.text = DataHolder.sharedInstance.arCiudades[indexPath.row].sNombre
+            cell.mostrarImagen(uri: DataHolder.sharedInstance.arCiudades[indexPath.row].sImagen!)
      
-          /*
-        if(indexPath.row==0){
-            cell.imgagen?.image=UIImage(named: "gato.png")
-            cell.lblNombre?.text="Gato"
-        }
-        else if(indexPath.row==1){
-            cell.imgagen?.image=UIImage(named: "perro.png")
-            cell.lblNombre?.text="Perro"
-        }
-        else if(indexPath.row==2){
-            cell.imgagen?.image=UIImage(named: "caballo.png")
-            cell.lblNombre?.text="Caballo"
-        }
-        else if(indexPath.row==3){
-            cell.imgagen?.image=UIImage(named: "huron.png")
-            cell.lblNombre?.text="Hurón"
-        }
-        else if(indexPath.row==4){
-            cell.imgagen?.image=UIImage(named: "canario.png")
-            cell.lblNombre?.text="Canario"
-        } */
+       
         return cell
     }
     @IBOutlet var colPrincipal:UICollectionView?
@@ -75,17 +55,18 @@ class VCColeccion: UIViewController, UICollectionViewDelegate, UICollectionViewD
         DataHolder.sharedInstance.descargarCiudades(delegate: self)
         
     }
-
+    
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     func DHDdescargaCiudadesCompleta(blFin: Bool) {
         if blFin{
             refreshUI()
         }
     }
+    
     
     func refreshUI() {
         DispatchQueue.main.async(execute:  {
