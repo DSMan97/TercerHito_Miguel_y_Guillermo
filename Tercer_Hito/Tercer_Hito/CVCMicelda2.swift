@@ -13,7 +13,12 @@ class CVCMicelda2: UICollectionViewCell {
     @IBOutlet var lblNombre:UILabel?
       var imagenDescargada:UIImage?
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
     
+   
     func mostrarImagen(uri:String){
         self.imagen?.image = nil
         // Create a reference to the file you want to download
@@ -31,4 +36,6 @@ class CVCMicelda2: UICollectionViewCell {
             }
         }
         //}
-    }}
+    }
+    
+}
