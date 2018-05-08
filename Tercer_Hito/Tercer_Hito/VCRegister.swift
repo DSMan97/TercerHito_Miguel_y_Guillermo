@@ -51,15 +51,16 @@ class VCRegister: UIViewController, DataHolderDelegate {
         let castStrLong:String = (txtLong?.text)!
         DataHolder.sharedInstance.miPerfil.dLongitud = Double(castStrLong)
     
-    if self.txtPass?.text==self.txtPassConfirm?.text && ((self.txtLong?.text) != nil) &&  ((self.txtLatitude?.text) != nil){
-    
+    if self.txtPass?.text==self.txtPassConfirm?.text {
+        
+        
+            
         DataHolder.sharedInstance.Registro(txtEmail: (txtEmail?.text)!, txtPass: (txtPass?.text)!, txtPassConfirm:(txtPassConfirm?.text)!, txtLatitude: (txtLatitude?.text)!, txtLongitud:(txtLong?.text)!, delegate: self)
        
         
-    }
-    else{
-        print("Por Favor Revise los campos")
-    }
+        
+    }else{
+        print("Las contraseñas no son iguales")
     }
     
 
@@ -73,4 +74,5 @@ class VCRegister: UIViewController, DataHolderDelegate {
     }
     */
 
+}
 }

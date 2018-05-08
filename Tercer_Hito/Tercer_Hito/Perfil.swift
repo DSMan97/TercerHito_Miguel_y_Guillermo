@@ -12,8 +12,8 @@ class Perfil: NSObject {
     
     let IDnombre = "Nombre"
     let IDEmail = "Email"
-    let IDLatitud = "Latitud"
-    let IDLongitud = "Longitud"
+    let IDLatitud = "latitud"
+    let IDLongitud = "longitud"
    
     
     var sNombre:String?
@@ -34,8 +34,8 @@ class Perfil: NSObject {
         return[
             "Nombre": sNombre as Any,
             "Email": sEmail as Any,
-            "Latitud": dLatitud as Any,
-            "Longitud": dLongitud as Any,
+            "latitud": dLatitud as Any,
+            "longitud": dLongitud as Any,
             
         ]
     }
