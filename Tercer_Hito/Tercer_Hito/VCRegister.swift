@@ -46,8 +46,10 @@ class VCRegister: UIViewController, DataHolderDelegate {
     //esto es de prueba y debe ser cambiado
         DataHolder.sharedInstance.miPerfil.sNombre = txtUser?.text
         DataHolder.sharedInstance.miPerfil.sEmail = txtEmail?.text
-    DataHolder.sharedInstance.miPerfil.dLatitud=Double(txtLatitude?.text)
-    DataHolder.sharedInstance.miPerfil.dLongitud=Double(txtLong?.text)
+        let castStrLat:String = (txtLatitude?.text)!
+        DataHolder.sharedInstance.miPerfil.dLatitud = Double(castStrLat)
+        let castStrLong:String = (txtLong?.text)!
+        DataHolder.sharedInstance.miPerfil.dLongitud = Double(castStrLong)
     if self.txtPass?.text==self.txtPassConfirm?.text{
     
         DataHolder.sharedInstance.Registro(txtEmail: (txtEmail?.text)!, txtPass: (txtPass?.text)!, txtPassConfirm:(txtPassConfirm?.text)!, txtLatitude: (txtLatitude?.text)!, txtLongitud:(txtLong?.text)!, delegate: self)

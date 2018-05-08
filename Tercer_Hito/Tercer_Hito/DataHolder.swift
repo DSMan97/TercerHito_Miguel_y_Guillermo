@@ -20,6 +20,7 @@ class DataHolder: NSObject {
     var vcColeccion:VCColeccion?
     var HMIimagen:[String:UIImage]=[:]
     var userdb:User?
+    var arAnimales:[Perfil]=[]
     
     var firStorage:Storage?
     func initFireBase(){
@@ -85,7 +86,7 @@ class DataHolder: NSObject {
         //}
         
     }
-    func Registro(txtEmail:String, txtPass:String,txtPassConfirm:String,txtLatitude:Double, txtLongitud:Double,delegate:DataHolderDelegate){
+    func Registro(txtEmail:String, txtPass:String,txtPassConfirm:String,txtLatitude:String, txtLongitud:String,delegate:DataHolderDelegate){
         
         //if txtPass.text==txtPassConfirm?.text{
         

@@ -61,6 +61,11 @@ class VCMap: UIViewController, CLLocationManagerDelegate, DataHolderDelegate {
     
     func DHDdescargaCiudadesCompleta(blFin: Bool) {
         if blFin{
+            for animales in DataHolder.sharedInstance.arAnimales{
+                if (animales.dLatitud != nil){
+                    self.agregarPin(titulo: animales.sNombre!, latitude: animales.dLatitud!, longitude: animales.dLongitud!)
+                }
+            }
             self.agregarPin()
     }
         
