@@ -24,7 +24,7 @@ class Perfil: NSObject {
     func setMap(valores:[String:Any]){
         sNombre = valores[IDnombre] as? String
         sEmail = valores[IDEmail] as? String
-        dLatitud = valores[IDLatitud] as? Double
+        dLatitud = valores[IDLatitud] as? String
         dLongitud = valores[IDLongitud] as? Double
         
       
