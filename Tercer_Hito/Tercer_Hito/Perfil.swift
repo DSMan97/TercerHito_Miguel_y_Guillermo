@@ -25,7 +25,7 @@ class Perfil: NSObject {
         sNombre = valores[IDnombre] as? String
         sEmail = valores[IDEmail] as? String
         dLatitud = valores[IDLatitud] as? String
-        dLongitud = valores[IDLongitud] as? Double
+        dLongitud = valores[IDLongitud] as? String
         
       
     }
