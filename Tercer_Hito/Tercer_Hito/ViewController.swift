@@ -43,7 +43,8 @@ class ViewController: UIViewController, DataHolderDelegate {
         print("Registro Incorrecto")
     }
     @IBAction func eventoClickLogin(){
-        DataHolder.sharedInstance.Login(txtUser: (txtUser?.text)!, textPass: (txtPass?.text)!, delegate: self)
+        
+        
         
     }
     
