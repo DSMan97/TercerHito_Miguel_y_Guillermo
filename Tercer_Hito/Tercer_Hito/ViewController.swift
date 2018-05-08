@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 import FirebaseAuth
-class ViewController: UIViewController {
+class ViewController: UIViewController, DataHolderDelegate {
     
     @IBOutlet var lblPrueba:UILabel?
     @IBOutlet var txtUser:UITextField?
@@ -34,39 +34,16 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    @IBAction func eventoClickLogin(){
-        Auth.auth().signIn(withEmail: (txtUser?.text)!, password:
-        (txtPass?.text)!) {(user, error) in
-            if user != nil{
-               // print("ENTRO")
-                let ruta =
-                DataHolder.sharedInstance.fireStoreDB?.collection("Perfiles").document((user?.uid)!)
-                ruta?.getDocument{ (document, error) in
-                    if document != nil{
-                        print("ENTRO")
-                        DataHolder.sharedInstance.miPerfil.setMap(valores: (document?.data())!)
-                        print(document?.data() as Any)
-                        self.performSegue(withIdentifier: "trlogin", sender: self)
-                    }
-                    else{
-                        print(error!)
-                    }
-                }
-                
-            }
-            else{
-                print("NO SE HA LOGUEADO")
-                print(error!)
-            }
+    func DHDLogin(blFin: Bool){
+        
+        if blFin{
+            self.performSegue(withIdentifier: "trlogin", sender: self)
+            print("Register Correcto")
         }
-        //Auth.auth().addStateDidChangeListener { (auth, user) in
-         
-            //self.performSegue(withIdentifier: "trlogin", sender: self)
-        //}
-        
-        
+        print("Registro Incorrecto")
+    }
+    @IBAction func eventoClickLogin(){
+        DataHolder.sharedInstance.Login(txtUser: (txtUser?.text)!, textPass: (txtPass?.text)!, delegate: self)
         
     }
     

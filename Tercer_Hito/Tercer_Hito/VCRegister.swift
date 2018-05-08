@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 import FirebaseAuth
-class VCRegister: UIViewController {
+class VCRegister: UIViewController, DataHolderDelegate {
     
     @IBOutlet var txtUser:UITextField?
     @IBOutlet  var txtEmail:UITextField?
@@ -32,35 +32,22 @@ class VCRegister: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    func DHDRegister(blFin: Bool){
+        
+        if blFin{
+            self.performSegue(withIdentifier: "trregister", sender: self)
+            print("Register Correcto")
+        }
+        print("Registro Incorrecto")
+    }
    @IBAction func clickRegistar(){
     //esto es de prueba y debe ser cambiado
         DataHolder.sharedInstance.miPerfil.sNombre = txtUser?.text
         DataHolder.sharedInstance.miPerfil.sEmail = txtEmail?.text
     if self.txtPass?.text==self.txtPassConfirm?.text{
     
-    Auth.auth().createUser(withEmail:(txtEmail?.text)!,password:(txtPass?.text)!){ (user, error) in
-        if user != nil {
-                print("TE REGISTRARSE")
-            
-            self.performSegue(withIdentifier: "trregister", sender: self)
-            
-                DataHolder.sharedInstance.fireStoreDB?.collection("Perfiles").document((user?.uid)!).setData(
-                    DataHolder.sharedInstance.miPerfil.getMap()
-                    
-                    
-                   /*[
-                     "nombre": self.txtUser?.text! as Any,
-                    "email": self.txtEmail?.text as Any,
-                    "contrasena": self.txtPass?.text as Any
-                     ]
-                    */
-                    )
-            }
-            else{
-                print(error!)
-            }
-        }
-        print("Hola!!!")
+        DataHolder.sharedInstance.Registro(txtEmail: (txtEmail?.text)!, txtPass: (txtPass?.text)!, txtPassConfirm:(txtPassConfirm?.text)! , delegate: self)
+       
         
     }
     else{

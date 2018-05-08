@@ -19,6 +19,7 @@ class DataHolder: NSObject {
     var vcPrincipal:VCPrincipal?
     var vcColeccion:VCColeccion?
     var HMIimagen:[String:UIImage]=[:]
+    var userdb:User?
     
     var firStorage:Storage?
     func initFireBase(){
@@ -50,9 +51,80 @@ class DataHolder: NSObject {
     }
    
 }
+    func Login(txtUser:String, textPass:String, delegate:DataHolderDelegate){
+        Auth.auth().signIn(withEmail: (txtUser), password:
+        (textPass)) {(user, error) in
+            if user != nil{
+                self.userdb=user
+                // print("ENTRO")
+                let ruta =
+                    DataHolder.sharedInstance.fireStoreDB?.collection("Perfiles").document((user?.uid)!)
+                ruta?.getDocument{ (document, error) in
+                    if document != nil{
+                        print("ENTRO")
+                        DataHolder.sharedInstance.miPerfil.setMap(valores: (document?.data())!)
+                        delegate.DHDLogin!(blFin: true)
+                        print(document?.data() as Any)
+                        //self.performSegue(withIdentifier: "trlogin", sender: self)
+                        
+                    }
+                    else{
+                        print(error!)
+                    }
+                }
+                
+            }
+            else{
+                print("NO SE HA LOGUEADO")
+                print(error!)
+            }
+        }
+        //Auth.auth().addStateDidChangeListener { (auth, user) in
+        
+        //self.performSegue(withIdentifier: "trlogin", sender: self)
+        //}
+        
+    }
+    func Registro(txtEmail:String, txtPass:String,txtPassConfirm:String,delegate:DataHolderDelegate){
+        
+        //if txtPass.text==txtPassConfirm?.text{
+        
+        Auth.auth().createUser(withEmail:(txtEmail),password:(txtPass)){ (user, error) in
+        if user != nil {
+            
+        print("TE REGISTRARSE")
+        
+        
+        self.userdb=user
+            delegate.DHDRegister!(blFin: true)
+       DataHolder.sharedInstance.fireStoreDB?.collection("Perfiles").document((user?.uid)!).setData(
+       DataHolder.sharedInstance.miPerfil.getMap()
+        
+        
+        /*[
+         "nombre": self.txtUser?.text! as Any,
+         "email": self.txtEmail?.text as Any,
+         "contrasena": self.txtPass?.text as Any
+         ]
+         */
+        )
+        }
+        else{
+        print(error!)
+        }
+        
+       
+        }
+    }
+
+
+
 
 }
-
 @objc protocol DataHolderDelegate{
     @objc optional func DHDdescargaCiudadesCompleta(blFin:Bool)
+    @objc optional func DHDLogin (blFin:Bool)
+    @objc optional func DHDRegister (blFin:Bool)
+    
+    
 }
