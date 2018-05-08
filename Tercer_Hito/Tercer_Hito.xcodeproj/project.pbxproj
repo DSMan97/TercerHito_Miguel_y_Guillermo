@@ -10,6 +10,7 @@
 		073C9ED82091CF1600604ACF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C9ED72091CF1600604ACF /* ViewController.swift */; };
 		073C9EEB2091CF1800604ACF /* Tercer_HitoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C9EEA2091CF1800604ACF /* Tercer_HitoTests.swift */; };
 		073C9EF62091CF1800604ACF /* Tercer_HitoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C9EF52091CF1800604ACF /* Tercer_HitoUITests.swift */; };
+		075FEC7420A226DE002312A3 /* LocationAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075FEC7320A226DE002312A3 /* LocationAdmin.swift */; };
 		07E955BA2091DFE2009B48E6 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E955A82091DFDF009B48E6 /* City.swift */; };
 		07E955BB2091DFE2009B48E6 /* VCMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E955A92091DFDF009B48E6 /* VCMap.swift */; };
 		07E955BC2091DFE2009B48E6 /* VCColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E955AA2091DFDF009B48E6 /* VCColeccion.swift */; };
@@ -62,6 +63,7 @@
 		073C9EF12091CF1800604ACF /* Tercer_HitoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tercer_HitoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		073C9EF52091CF1800604ACF /* Tercer_HitoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tercer_HitoUITests.swift; sourceTree = "<group>"; };
 		073C9EF72091CF1800604ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		075FEC7320A226DE002312A3 /* LocationAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAdmin.swift; sourceTree = "<group>"; };
 		07E955A82091DFDF009B48E6 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		07E955A92091DFDF009B48E6 /* VCMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMap.swift; sourceTree = "<group>"; };
 		07E955AA2091DFDF009B48E6 /* VCColeccion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCColeccion.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				07E955A92091DFDF009B48E6 /* VCMap.swift */,
 				07E955B92091DFE2009B48E6 /* VCPrincipal.swift */,
 				07E955B82091DFE1009B48E6 /* VCRegister.swift */,
+				075FEC7320A226DE002312A3 /* LocationAdmin.swift */,
 			);
 			path = Tercer_Hito;
 			sourceTree = "<group>";
@@ -536,6 +539,7 @@
 				07E955BB2091DFE2009B48E6 /* VCMap.swift in Sources */,
 				07E955CB2091DFE2009B48E6 /* VCPrincipal.swift in Sources */,
 				07E955BA2091DFE2009B48E6 /* City.swift in Sources */,
+				075FEC7420A226DE002312A3 /* LocationAdmin.swift in Sources */,
 				07E955BC2091DFE2009B48E6 /* VCColeccion.swift in Sources */,
 				07E955CA2091DFE2009B48E6 /* VCRegister.swift in Sources */,
 				07E955BE2091DFE2009B48E6 /* CVCMicelda2.swift in Sources */,

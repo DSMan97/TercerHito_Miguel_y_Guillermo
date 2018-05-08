@@ -8,6 +8,7 @@ pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'Firebase/Storage'
+pod 'Firebase/Database'
   # Pods for Tercer_Hito
 
   target 'Tercer_HitoTests' do

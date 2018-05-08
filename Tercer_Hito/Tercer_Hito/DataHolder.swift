@@ -34,14 +34,20 @@ class DataHolder: NSObject {
     func descargarCiudades(delegate:DataHolderDelegate){
             DataHolder.sharedInstance.fireStoreDB?.collection("animales").addSnapshotListener  { (querySnapshot, err) in
                 if let err = err {
+                    delegate.DHDdescargaCiudadesCompleta!(blFin:true)
                     print("Error getting documents: \(err)")
                 } else {
                     self.arCiudades=[]
+                    self.arAnimales=[]
                     for document in querySnapshot!.documents {
                         
                         let ciudad: City=City()
+                        let animales: Perfil=Perfil()
                         ciudad.sID = document.documentID
+                        animales.sNombre = document.documentID
+                        animales.setMap(valores: document.data())
                         ciudad.setMap(valores: document.data())
+                        self.arAnimales.append(animales)
                         self.arCiudades.append(ciudad)
                         print("\(document.documentID) => \(document.data())")
                     }
