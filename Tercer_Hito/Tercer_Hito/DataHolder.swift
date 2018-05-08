@@ -15,10 +15,10 @@ class DataHolder: NSObject {
     static let sharedInstance:DataHolder = DataHolder()
     var fireStoreDB:Firestore?
     var miPerfil: Perfil=Perfil()
-    
     var arCiudades: [City] = NSArray() as! [City]
     var vcPrincipal:VCPrincipal?
     var vcColeccion:VCColeccion?
+    var HMIimagen:[String:UIImage]=[:]
     
     var firStorage:Storage?
     func initFireBase(){
@@ -26,7 +26,8 @@ class DataHolder: NSObject {
         fireStoreDB=Firestore.firestore()
         firStorage=Storage.storage()
     }
-   
+    
+    
     
     func descargarCiudades(delegate:DataHolderDelegate){
             DataHolder.sharedInstance.fireStoreDB?.collection("animales").addSnapshotListener  { (querySnapshot, err) in
