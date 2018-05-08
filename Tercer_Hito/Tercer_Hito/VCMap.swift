@@ -19,6 +19,7 @@ class VCMap: UIViewController, CLLocationManagerDelegate, DataHolderDelegate {
         super.viewDidLoad()
         
         DataHolder.sharedInstance.descargarCiudades(delegate: self)
+        self.nuevaRegionMapa(latitude: 40.5, longitud: -3.6666667)
         locationManager = CLLocationManager()
         locationManager?.delegate = self
         locationManager?.requestAlwaysAuthorization()
@@ -26,6 +27,29 @@ class VCMap: UIViewController, CLLocationManagerDelegate, DataHolderDelegate {
         MiMapa?.showsUserLocation = true
         
         // Do any additional setup after loading the view.
+    }
+    func DHDdescargaCiudadesCompleta(blFin: Bool) {
+        if blFin{
+            for animales in DataHolder.sharedInstance.arAnimales{
+                if (animales.dLatitud != nil){
+                    self.agregarPin(titulo: animales.sNombre!, latitud: animales.dLatitud!, longitud: animales.dLongitud!)
+                }
+            }
+        }
+        
+    }
+    func agregarPin(titulo:String, latitud lat:Double, longitud lon:Double ){
+        
+        let miPin:MKPointAnnotation = MKPointAnnotation()
+        miPin.coordinate.latitude = lat
+        miPin.coordinate.longitude = lon
+        miPin.title = titulo
+        MiMapa?.addAnnotation(miPin)
+        self.agregarPin()
+    }
+    
+    func agregarPin(){
+        print("Agregando pines")
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,29 +71,7 @@ class VCMap: UIViewController, CLLocationManagerDelegate, DataHolderDelegate {
         MiMapa?.setRegion(miRegion, animated: true)
     }
     
-    func DHDdescargaCiudadesCompleta(blFin: Bool) {
-        if blFin{
-            for animales in DataHolder.sharedInstance.arAnimales{
-                if (animales.dLatitud != nil){
-                    self.agregarPin(titulo: animales.sNombre!, latitud: animales.dLatitud!, longitud: animales.dLongitud!)
-                }
-            }
-    }
-        
-}
-    func agregarPin(titulo:String, latitud lat:Double, longitud lon:Double ){
-        
-        let miPin:MKPointAnnotation = MKPointAnnotation()
-        miPin.coordinate.latitude = lat
-        miPin.coordinate.longitude = lon
-        miPin.title = titulo
-        MiMapa?.addAnnotation(miPin)
-        self.agregarPin()
-    }
     
-    func agregarPin(){
-        print("Agregando pines")
-    }
     
     /*
     // MARK: - Navigation
