@@ -85,7 +85,7 @@ class DataHolder: NSObject {
         //}
         
     }
-    func Registro(txtEmail:String, txtPass:String,txtPassConfirm:String,delegate:DataHolderDelegate){
+    func Registro(txtEmail:String, txtPass:String,txtPassConfirm:String,txtLatitude:String, txtLongitud:String,delegate:DataHolderDelegate){
         
         //if txtPass.text==txtPassConfirm?.text{
         

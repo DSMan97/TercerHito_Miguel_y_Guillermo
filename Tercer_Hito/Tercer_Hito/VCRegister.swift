@@ -15,6 +15,8 @@ class VCRegister: UIViewController, DataHolderDelegate {
     @IBOutlet  var txtEmail:UITextField?
     @IBOutlet var txtPass:UITextField?
     @IBOutlet var txtPassConfirm:UITextField?
+    @IBOutlet var txtLatitude:UITextField?
+    @IBOutlet var txtLong:UITextField?
     @IBOutlet var btnlAceptar:UIButton?
     @IBOutlet var btnCancelar:UIButton?
     
@@ -44,9 +46,11 @@ class VCRegister: UIViewController, DataHolderDelegate {
     //esto es de prueba y debe ser cambiado
         DataHolder.sharedInstance.miPerfil.sNombre = txtUser?.text
         DataHolder.sharedInstance.miPerfil.sEmail = txtEmail?.text
+        DataHolder.sharedInstance.miPerfil.iLatitud=txtLatitude?.text
+        DataHolder.sharedInstance.miPerfil.iLongitud=txtLong?.text
     if self.txtPass?.text==self.txtPassConfirm?.text{
     
-        DataHolder.sharedInstance.Registro(txtEmail: (txtEmail?.text)!, txtPass: (txtPass?.text)!, txtPassConfirm:(txtPassConfirm?.text)! , delegate: self)
+        DataHolder.sharedInstance.Registro(txtEmail: (txtEmail?.text)!, txtPass: (txtPass?.text)!, txtPassConfirm:(txtPassConfirm?.text)!, txtLatitude: (txtLatitude?.text)!, txtLongitud:(txtLong?.text)!, delegate: self)
        
         
     }
