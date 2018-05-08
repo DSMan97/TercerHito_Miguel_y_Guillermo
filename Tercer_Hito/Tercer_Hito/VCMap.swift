@@ -51,13 +51,13 @@ class VCMap: UIViewController, CLLocationManagerDelegate, DataHolderDelegate {
         if blFin{
             for animales in DataHolder.sharedInstance.arAnimales{
                 if (animales.dLatitud != nil){
-                    self.agregarPin(titulo: animales.sNombre!, latitude: animales.dLatitud!, longitude: animales.dLongitud!)
+                    self.agregarPin(titulo: animales.sNombre!, latitud: animales.dLatitud!, longitud: animales.dLongitud!)
                 }
             }
     }
         
 }
-    func agregarPin(titulo:String, latitude lat:Double, longitude lon:Double ){
+    func agregarPin(titulo:String, latitud lat:Double, longitud lon:Double ){
         
         let miPin:MKPointAnnotation = MKPointAnnotation()
         miPin.coordinate.latitude = lat
