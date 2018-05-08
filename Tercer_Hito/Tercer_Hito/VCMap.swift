@@ -60,7 +60,7 @@ class VCMap: UIViewController, CLLocationManagerDelegate, DataHolderDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         print(locations[0])
-        self.nuevaRegionMapa(latitude: locations[0].coordinate.latitude, longitud: locations[0].coordinate.longitude)
+        //self.nuevaRegionMapa(latitude: locations[0].coordinate.latitude, longitud: locations[0].coordinate.longitude)
     }
     
     func nuevaRegionMapa(latitude lat: Double, longitud lon:Double){

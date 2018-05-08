@@ -11,6 +11,7 @@
 		073C9EEB2091CF1800604ACF /* Tercer_HitoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C9EEA2091CF1800604ACF /* Tercer_HitoTests.swift */; };
 		073C9EF62091CF1800604ACF /* Tercer_HitoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C9EF52091CF1800604ACF /* Tercer_HitoUITests.swift */; };
 		075FEC7420A226DE002312A3 /* LocationAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075FEC7320A226DE002312A3 /* LocationAdmin.swift */; };
+		075FEC7D20A22E29002312A3 /* TrabajoFinal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 075FEC7B20A22E29002312A3 /* TrabajoFinal.xcdatamodeld */; };
 		07E955BA2091DFE2009B48E6 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E955A82091DFDF009B48E6 /* City.swift */; };
 		07E955BB2091DFE2009B48E6 /* VCMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E955A92091DFDF009B48E6 /* VCMap.swift */; };
 		07E955BC2091DFE2009B48E6 /* VCColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E955AA2091DFDF009B48E6 /* VCColeccion.swift */; };
@@ -64,6 +65,7 @@
 		073C9EF52091CF1800604ACF /* Tercer_HitoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tercer_HitoUITests.swift; sourceTree = "<group>"; };
 		073C9EF72091CF1800604ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		075FEC7320A226DE002312A3 /* LocationAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAdmin.swift; sourceTree = "<group>"; };
+		075FEC7C20A22E29002312A3 /* TrabajoFinal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrabajoFinal.xcdatamodel; sourceTree = "<group>"; };
 		07E955A82091DFDF009B48E6 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		07E955A92091DFDF009B48E6 /* VCMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMap.swift; sourceTree = "<group>"; };
 		07E955AA2091DFDF009B48E6 /* VCColeccion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCColeccion.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		073C9ED42091CF1600604ACF /* Tercer_Hito */ = {
 			isa = PBXGroup;
 			children = (
+				075FEC7B20A22E29002312A3 /* TrabajoFinal.xcdatamodeld */,
 				07E955B12091DFE0009B48E6 /* GoogleService-Info.plist */,
 				07E955AD2091DFE0009B48E6 /* Assets.xcassets */,
 				07E955B62091DFE1009B48E6 /* perro.png */,
@@ -533,6 +536,7 @@
 			files = (
 				073C9ED82091CF1600604ACF /* ViewController.swift in Sources */,
 				07E955C42091DFE2009B48E6 /* DataHolder.swift in Sources */,
+				075FEC7D20A22E29002312A3 /* TrabajoFinal.xcdatamodeld in Sources */,
 				07E955C02091DFE2009B48E6 /* Perfil.swift in Sources */,
 				07E955BD2091DFE2009B48E6 /* TVCMiCelda.swift in Sources */,
 				07E955C22091DFE2009B48E6 /* AppDelegate.swift in Sources */,
@@ -869,6 +873,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		075FEC7B20A22E29002312A3 /* TrabajoFinal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				075FEC7C20A22E29002312A3 /* TrabajoFinal.xcdatamodel */,
+			);
+			currentVersion = 075FEC7C20A22E29002312A3 /* TrabajoFinal.xcdatamodel */;
+			path = TrabajoFinal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 073C9ECA2091CF1600604ACF /* Project object */;
 }
