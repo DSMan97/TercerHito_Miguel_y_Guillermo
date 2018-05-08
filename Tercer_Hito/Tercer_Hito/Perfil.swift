@@ -18,14 +18,14 @@ class Perfil: NSObject {
     
     var sNombre:String?
     var sEmail:String?
-    var iLatitud:String?
-    var iLongitud:String?
+    var dLatitud:String?
+    var dLongitud:String?
     
     func setMap(valores:[String:Any]){
         sNombre = valores[IDnombre] as? String
         sEmail = valores[IDEmail] as? String
-        iLatitud = valores[IDLatitud] as? String
-        iLongitud = valores[IDLongitud] as? String
+        dLatitud = valores[IDLatitud] as? Double
+        dLongitud = valores[IDLongitud] as? Double
         
       
     }
@@ -34,8 +34,8 @@ class Perfil: NSObject {
         return[
             "Nombre": sNombre as Any,
             "Email": sEmail as Any,
-            "Latitud": iLatitud as Any,
-            "Longitud": iLongitud as Any,
+            "Latitud": dLatitud as Any,
+            "Longitud": dLongitud as Any,
             
         ]
     }
