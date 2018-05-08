@@ -50,14 +50,15 @@ class VCRegister: UIViewController, DataHolderDelegate {
         DataHolder.sharedInstance.miPerfil.dLatitud = Double(castStrLat)
         let castStrLong:String = (txtLong?.text)!
         DataHolder.sharedInstance.miPerfil.dLongitud = Double(castStrLong)
-    if self.txtPass?.text==self.txtPassConfirm?.text{
+    
+    if self.txtPass?.text==self.txtPassConfirm?.text && ((self.txtLong?.text) != nil) &&  ((self.txtLatitude?.text) != nil){
     
         DataHolder.sharedInstance.Registro(txtEmail: (txtEmail?.text)!, txtPass: (txtPass?.text)!, txtPassConfirm:(txtPassConfirm?.text)!, txtLatitude: (txtLatitude?.text)!, txtLongitud:(txtLong?.text)!, delegate: self)
        
         
     }
     else{
-        print("contraseña incorrecta")
+        print("Por Favor Revise los campos")
     }
     }
     

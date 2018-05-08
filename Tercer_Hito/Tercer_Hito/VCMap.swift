@@ -25,9 +25,6 @@ class VCMap: UIViewController, CLLocationManagerDelegate, DataHolderDelegate {
         locationManager?.startUpdatingLocation()
         MiMapa?.showsUserLocation = true
         
-        
-        
-        
         // Do any additional setup after loading the view.
     }
 
@@ -35,15 +32,7 @@ class VCMap: UIViewController, CLLocationManagerDelegate, DataHolderDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func agregarPin(titulo:String, latitude lat:Double, longitude lon:Double ){
-        
-        let miPin:MKPointAnnotation = MKPointAnnotation()
-        miPin.coordinate.latitude = lat
-        miPin.coordinate.longitude = lon
-        miPin.title = titulo
-        MiMapa?.addAnnotation(miPin)
-    }
+   
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         print(locations[0])
@@ -65,9 +54,17 @@ class VCMap: UIViewController, CLLocationManagerDelegate, DataHolderDelegate {
                     self.agregarPin(titulo: animales.sNombre!, latitude: animales.dLatitud!, longitude: animales.dLongitud!)
                 }
             }
-            self.agregarPin()
     }
         
+}
+    func agregarPin(titulo:String, latitude lat:Double, longitude lon:Double ){
+        
+        let miPin:MKPointAnnotation = MKPointAnnotation()
+        miPin.coordinate.latitude = lat
+        miPin.coordinate.longitude = lon
+        miPin.title = titulo
+        MiMapa?.addAnnotation(miPin)
+        self.agregarPin()
     }
     
     func agregarPin(){
