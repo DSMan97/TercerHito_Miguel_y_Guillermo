@@ -19,7 +19,6 @@ class VCMap: UIViewController, CLLocationManagerDelegate, DataHolderDelegate {
         super.viewDidLoad()
         
         DataHolder.sharedInstance.descargarCiudades(delegate: self)
-        self.agregarPin(titulo: "HOLA", latitude: 42, longitude: -3)
         locationManager = CLLocationManager()
         locationManager?.delegate = self
         locationManager?.requestAlwaysAuthorization()
