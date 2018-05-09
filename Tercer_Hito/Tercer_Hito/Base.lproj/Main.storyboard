@@ -230,7 +230,7 @@
             </objects>
             <point key="canvasLocation" x="-679" y="-72"/>
         </scene>
-        <!--Item 3-->
+        <!--Colección-->
         <scene sceneID="2c0-qY-mRK">
             <objects>
                 <viewController id="gYr-dr-AvK" customClass="VCColeccion" customModule="Tercer_Hito" customModuleProvider="target" sceneMemberID="viewController">
@@ -284,7 +284,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="puy-IT-qSq"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 3" id="Mov-Ak-hqn"/>
+                    <tabBarItem key="tabBarItem" title="Colección" id="Mov-Ak-hqn"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="colPrincipal" destination="kp5-um-d6v" id="tkd-PV-pu6"/>
@@ -294,7 +294,7 @@
             </objects>
             <point key="canvasLocation" x="1636" y="8.5457271364317844"/>
         </scene>
-        <!--Item 2-->
+        <!--Tabla de Animales-->
         <scene sceneID="O4z-XP-WCE">
             <objects>
                 <viewController id="TJP-EB-SOQ" customClass="VCPrincipal" customModule="Tercer_Hito" customModuleProvider="target" sceneMemberID="viewController">
@@ -343,7 +343,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="SZu-zW-Jse"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="bUJ-Ds-XfW"/>
+                    <tabBarItem key="tabBarItem" title="Tabla de Animales" id="bUJ-Ds-XfW"/>
                     <connections>
                         <outlet property="tbMiTable" destination="tUk-GR-u9J" id="MQO-RX-e0c"/>
                     </connections>
@@ -352,7 +352,7 @@
             </objects>
             <point key="canvasLocation" x="864.79999999999995" y="435.83208395802103"/>
         </scene>
-        <!--Item 1-->
+        <!--Mapa-->
         <scene sceneID="zPv-42-7zE">
             <objects>
                 <viewController id="Ou5-nY-j58" customClass="VCMap" customModule="Tercer_Hito" customModuleProvider="target" sceneMemberID="viewController">
@@ -368,7 +368,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="b9S-eC-GDV"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="SJ9-2x-BUC"/>
+                    <tabBarItem key="tabBarItem" title="Mapa" id="SJ9-2x-BUC"/>
                     <connections>
                         <outlet property="MiMapa" destination="7Rw-6I-HAC" id="FEp-7K-T1a"/>
                     </connections>
