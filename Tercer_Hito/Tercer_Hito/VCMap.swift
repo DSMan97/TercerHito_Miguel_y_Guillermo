@@ -31,13 +31,13 @@ class VCMap: UIViewController, CLLocationManagerDelegate, DataHolderDelegate {
     func DHDdescargaCiudadesCompleta(blFin: Bool) {
         if blFin{
             for perfiles in DataHolder.sharedInstance.arPerfiles{
-                //if (perfiles != nil){
-                    print( perfiles.sNombre)
+                if (perfiles != nil){
+                    print( perfiles.sNombre!)
                     print( perfiles.dLatitud!)
                     print( perfiles.dLongitud!)
                     self.agregarPin(titulo: perfiles.sNombre!, latitud: perfiles.dLatitud!, longitud: perfiles.dLongitud!)
                     //self.agregarPin(titulo: perfiles.sNombre!, latitud: perfiles.dLatitud!, longitud: perfiles.dLongitud!)
-                //}
+                }
             }
         }
         
@@ -88,3 +88,4 @@ class VCMap: UIViewController, CLLocationManagerDelegate, DataHolderDelegate {
     */
 
 }
+
