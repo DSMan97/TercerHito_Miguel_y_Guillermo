@@ -45,10 +45,10 @@ class VCMap: UIViewController, CLLocationManagerDelegate, DataHolderDelegate {
         miPin.coordinate.longitude = lon
         miPin.title = titulo
         MiMapa?.addAnnotation(miPin)
-        self.agregarPin()
+        self.notificacionPinAgregado()
     }
     
-    func agregarPin(){
+    func notificacionPinAgregado(){
         print("Agregando pines")
     }
 
