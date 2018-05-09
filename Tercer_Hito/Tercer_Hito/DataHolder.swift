@@ -15,12 +15,12 @@ class DataHolder: NSObject {
     static let sharedInstance:DataHolder = DataHolder()
     var fireStoreDB:Firestore?
     var miPerfil: Perfil=Perfil()
-    var arCiudades: [City] = NSArray() as! [City]
+    var arAnimales: [City] = NSArray() as! [City]
     var vcPrincipal:VCPrincipal?
     var vcColeccion:VCColeccion?
     var HMIimagen:[String:UIImage]=[:]
     var userdb:User?
-    var arAnimales:[Perfil]=[]
+    var arPerfiles:[Perfil]=[]
     
     var firStorage:Storage?
     func initFireBase(){
@@ -29,29 +29,45 @@ class DataHolder: NSObject {
         firStorage=Storage.storage()
     }
     
-    
-    
+    func descargarPeriles(delegate:DataHolderDelegate){
+        DataHolder.sharedInstance.fireStoreDB?.collection("Perfiles").addSnapshotListener  { (querySnapshot, err) in
+            print("cogiendo perfiles")
+            if let err = err {
+                delegate.DHDdescargaCiudadesCompleta!(blFin:true)
+                print("Error getting documents: \(err)")
+            } else {
+                self.arPerfiles=[]
+                for document in querySnapshot!.documents {
+                    
+                    let perfiles: Perfil=Perfil()
+                    perfiles.sNombre = document.documentID
+                    perfiles.setMap(valores: document.data())
+                    self.arPerfiles.append(perfiles)
+                    print("\(document.documentID) => \(document.data())")
+                }
+                print("-------->",self.arPerfiles.count )
+                delegate.DHDdescargaCiudadesCompleta!(blFin:true)
+                //self.tbMiTable?.reloadData()
+            }
+        }
+        
+    }
     func descargarCiudades(delegate:DataHolderDelegate){
             DataHolder.sharedInstance.fireStoreDB?.collection("animales").addSnapshotListener  { (querySnapshot, err) in
                 if let err = err {
                     delegate.DHDdescargaCiudadesCompleta!(blFin:true)
                     print("Error getting documents: \(err)")
                 } else {
-                    self.arCiudades=[]
                     self.arAnimales=[]
                     for document in querySnapshot!.documents {
                         
                         let ciudad: City=City()
-                        let animales: Perfil=Perfil()
                         ciudad.sID = document.documentID
-                        animales.sNombre = document.documentID
-                        animales.setMap(valores: document.data())
                         ciudad.setMap(valores: document.data())
-                        self.arAnimales.append(animales)
-                        self.arCiudades.append(ciudad)
+                        self.arAnimales.append(ciudad)
                         print("\(document.documentID) => \(document.data())")
                     }
-                    print("-------->",self.arCiudades.count )
+                    print("-------->",self.arAnimales.count )
                     delegate.DHDdescargaCiudadesCompleta!(blFin:true)
                     //self.tbMiTable?.reloadData()
                 }

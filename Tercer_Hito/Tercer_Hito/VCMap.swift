@@ -18,7 +18,7 @@ class VCMap: UIViewController, CLLocationManagerDelegate, DataHolderDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DataHolder.sharedInstance.descargarCiudades(delegate: self)
+        DataHolder.sharedInstance.descargarPeriles(delegate: self)
         self.nuevaRegionMapa(latitude: 40.5, longitud: -3.6666667)
         locationManager = CLLocationManager()
         locationManager?.delegate = self
@@ -30,10 +30,14 @@ class VCMap: UIViewController, CLLocationManagerDelegate, DataHolderDelegate {
     }
     func DHDdescargaCiudadesCompleta(blFin: Bool) {
         if blFin{
-            for animales in DataHolder.sharedInstance.arAnimales{
-                if (animales.dLatitud != nil){
-                    self.agregarPin(titulo: animales.sNombre!, latitud: animales.dLatitud!, longitud: animales.dLongitud!)
-                }
+            for perfiles in DataHolder.sharedInstance.arPerfiles{
+                //if (perfiles != nil){
+                    print( perfiles.sNombre)
+                    print( perfiles.dLatitud!)
+                    print( perfiles.dLongitud!)
+                    self.agregarPin(titulo: perfiles.sNombre!, latitud: perfiles.dLatitud!, longitud: perfiles.dLongitud!)
+                    //self.agregarPin(titulo: perfiles.sNombre!, latitud: perfiles.dLatitud!, longitud: perfiles.dLongitud!)
+                //}
             }
         }
         

@@ -13,7 +13,7 @@ class VCColeccion: UIViewController, UICollectionViewDelegate, UICollectionViewD
   
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-         return DataHolder.sharedInstance.arCiudades.count
+         return DataHolder.sharedInstance.arAnimales.count
         
         
     }
@@ -22,8 +22,8 @@ class VCColeccion: UIViewController, UICollectionViewDelegate, UICollectionViewD
         
         
             
-            cell.lblNombre?.text = DataHolder.sharedInstance.arCiudades[indexPath.row].sNombre
-            cell.mostrarImagen(uri: DataHolder.sharedInstance.arCiudades[indexPath.row].sImagen!)
+            cell.lblNombre?.text = DataHolder.sharedInstance.arAnimales[indexPath.row].sNombre
+            cell.mostrarImagen(uri: DataHolder.sharedInstance.arAnimales[indexPath.row].sImagen!)
      
        
         return cell

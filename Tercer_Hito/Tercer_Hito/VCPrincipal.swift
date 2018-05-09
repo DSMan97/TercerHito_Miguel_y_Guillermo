@@ -64,7 +64,7 @@ class VCPrincipal: UIViewController, UITableViewDelegate, UITableViewDataSource,
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataHolder.sharedInstance.arCiudades.count
+        return DataHolder.sharedInstance.arAnimales.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -73,8 +73,8 @@ class VCPrincipal: UIViewController, UITableViewDelegate, UITableViewDataSource,
            // cell.lblNombre?.text = self.arCiudades[indexPath.row].sNombre
             //cell.mostrarImagen(uri: self.arCiudades[indexPath.row].sImagen!)
         
-        cell.lblNombre?.text=DataHolder.sharedInstance.arCiudades[indexPath.row].sNombre
-        cell.mostrarImagen(uri: DataHolder.sharedInstance.arCiudades[indexPath.row].sImagen!)
+        cell.lblNombre?.text=DataHolder.sharedInstance.arAnimales[indexPath.row].sNombre
+        cell.mostrarImagen(uri: DataHolder.sharedInstance.arAnimales[indexPath.row].sImagen!)
       
         return cell
     }
